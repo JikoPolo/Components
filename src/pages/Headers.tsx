@@ -1,10 +1,18 @@
 import HeaderMenuRightLogoLeft from "../ui/headers/HeaderMenuRightLogoLeft";
+import HeaderCentered from "../ui/headers/HeaderCentered";
 
 const Headers = () => {
   return (
     <>
-      <h1 className=" text-4xl">Headers</h1>
-      <HeaderMenuRightLogoLeft />
+      <h1 className="text-4xl">Headers</h1>
+      <ul className="flex gap-8 w-full flex-wrap ">
+        <li className="w-full">
+          <HeaderMenuRightLogoLeft />
+        </li>
+        <li className="w-full">
+          <HeaderCentered />
+        </li>
+      </ul>
     </>
   );
 };
