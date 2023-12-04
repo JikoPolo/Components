@@ -43,6 +43,7 @@ const DoubleHeader: React.FC = () => {
 
       {/* bottom nav */}
       <nav
+        // px-4 sm:px-16 les valeurs coincident avec celles du top nav et les valurs absolute du burger
         className={`w-full flex justify-between bg-transparent px-4 sm:px-16 py-4 ${
           isOpen ? "flex-col" : ""
         }`}

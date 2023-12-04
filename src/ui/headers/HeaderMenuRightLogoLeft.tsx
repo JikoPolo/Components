@@ -26,12 +26,15 @@ const HeaderMenuRightLogoLeft: React.FC = () => {
           isOpen ? "flex-col" : ""
         }`}
       >
+        {/* Logo */}
         <div className="flex items-center mx-4">
           <a href="#" title="logo" className="flex">
             <img src={reactLogo} alt="logo" />
             <span className="text-xl font-bold mx-3">react</span>
           </a>
         </div>
+
+        {/* Menu */}
         <ul className="justify-start items-center gap-8 hidden md:flex">
           <li className="hover:underline">
             <Link to="/">homepage</Link>
@@ -46,6 +49,8 @@ const HeaderMenuRightLogoLeft: React.FC = () => {
             <Link to="/login">login</Link>
           </li>
         </ul>
+
+        {/* When responsive and burger is open */}
         {isOpen && (
           <ul className="justify-start items-center gap-8 mx-4 my-2">
             <li className="p-4 text-xl">
