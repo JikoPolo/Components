@@ -13,6 +13,7 @@ const HeaderMenuRightLogoLeft: React.FC = () => {
     setIsOpen((prevState) => !prevState);
   };
 
+  // Burger Animation
   const variants = {
     open: { rotate: 90, opacity: 1 },
     closed: { rotate: 0, opacity: 1 },
@@ -61,6 +62,7 @@ const HeaderMenuRightLogoLeft: React.FC = () => {
             </li>
           </ul>
         )}
+        {/* Burger button */}
         <div className="absolute right-16 flex items-center md:hidden">
           <motion.button
             layout

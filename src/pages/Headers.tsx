@@ -1,5 +1,6 @@
 import HeaderMenuRightLogoLeft from "../ui/headers/HeaderMenuRightLogoLeft";
 import HeaderCentered from "../ui/headers/HeaderCentered";
+import DoubleHeader from "../ui/headers/DoubleHeader";
 
 const Headers = () => {
   return (
@@ -11,6 +12,9 @@ const Headers = () => {
         </li>
         <li className="w-full">
           <HeaderCentered />
+        </li>
+        <li className="w-full">
+          <DoubleHeader />
         </li>
       </ul>
     </>

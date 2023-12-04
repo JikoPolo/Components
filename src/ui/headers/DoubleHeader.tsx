@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import reactLogo from "../../assets/react.svg";
 import Burger from "../icons/Burger";
 import Close from "../icons/Close";
+import Icon from "../icons/Icon";
 
-const HeaderCentered: React.FC = () => {
+const DoubleHeader: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuState = () => {
@@ -19,9 +20,30 @@ const HeaderCentered: React.FC = () => {
   };
 
   return (
-    <header className="relative px-16 bg-base-200 w-full">
+    <header className="relative bg-base-200 w-full">
+      {/* top nav */}
+      <nav>
+        <ul className="menu menu-horizontal w-full justify-end items-center gap-8 bg-base-300 px-4 sm:px-16">
+          <li className="hover:underline">
+            <Link to="/">homepage</Link>
+          </li>
+          <li className="hover:underline">
+            <Link to="/product">product</Link>
+          </li>
+          <li className="hover:underline">
+            <Link to="/product">
+              <Icon />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Divider if NEEDED // m-0 + h-px pour reset le style */}
+      <div className="divider m-0 h-px "></div>
+
+      {/* bottom nav */}
       <nav
-        className={`w-full flex justify-center bg-transparent p-4 ${
+        className={`w-full flex justify-between bg-transparent px-4 sm:px-16 py-4 ${
           isOpen ? "flex-col" : ""
         }`}
       >
@@ -31,22 +53,12 @@ const HeaderCentered: React.FC = () => {
             <span className="text-xl font-bold mx-3">react</span>
           </a>
         </div>
-        <ul className="menu menu-horizontal justify-start items-center gap-8 hidden md:flex">
+        <ul className="justify-start items-center gap-8 hidden md:flex">
           <li className="hover:underline">
             <Link to="/">homepage</Link>
           </li>
           <li className="hover:underline">
-            <details open={false}>
-              <summary>pricing</summary>
-              <ul>
-                <li>
-                  <a>Banking</a>
-                </li>
-                <li>
-                  <a>Banking</a>
-                </li>
-              </ul>
-            </details>
+            <Link to="/pricing">pricing</Link>
           </li>
           <li className="hover:underline">
             <Link to="/product">product</Link>
@@ -72,7 +84,7 @@ const HeaderCentered: React.FC = () => {
           </ul>
         )}
         {/* Burger button */}
-        <div className="absolute right-16 flex items-center md:hidden">
+        <div className="absolute right-4 flex items-center sm:right-16 md:hidden">
           <motion.button
             layout
             animate={isOpen ? "open" : "closed"}
@@ -88,4 +100,4 @@ const HeaderCentered: React.FC = () => {
   );
 };
 
-export default HeaderCentered;
+export default DoubleHeader;
