@@ -96,7 +96,7 @@ const FooterWithColumns = () => {
                   className="bg-white w-full focus:outline-none border-0 px-6 py-3 rounded-full"
                   placeholder="Your Email Address"
                 />
-                <button className="btn btn-primary w-1/3 mt-4" type="button">
+                <button className="btn btn-primary w-24 mt-4" type="button">
                   Subscribe
                 </button>
               </div>
