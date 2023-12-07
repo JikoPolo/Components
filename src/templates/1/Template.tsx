@@ -1,14 +1,18 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { TemplateParamTypes } from "../ParamsTypes";
+// components
+import DoubleHeader from "../../ui/headers/DoubleHeader";
+import Hero from "./Hero";
 
 const TemplatePage: React.FC = () => {
   const { id } = useParams<TemplateParamTypes>();
+  console.log(id);
 
   return (
     <div>
-      <h1>Template {id} oui</h1>
-      {/* Render the template content based on the id */}
+      <DoubleHeader />
+      <Hero />
     </div>
   );
 };
