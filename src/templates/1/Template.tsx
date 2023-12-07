@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { TemplateParamTypes } from "../ParamsTypes";
 // components
 import DoubleHeader from "../../ui/headers/DoubleHeader";
-import Hero from "./Hero";
+import HeroImgRightWave from "../../ui/heros/HeroImgRightWave";
+import HowDoesItWork from "../../ui/marketing/HowDoesItWork";
+import Testimonial from "../../ui/marketing/Testimonial";
 
 const TemplatePage: React.FC = () => {
   const { id } = useParams<TemplateParamTypes>();
@@ -12,7 +14,9 @@ const TemplatePage: React.FC = () => {
   return (
     <div>
       <DoubleHeader />
-      <Hero />
+      <HeroImgRightWave />
+      <HowDoesItWork />
+      <Testimonial />
     </div>
   );
 };

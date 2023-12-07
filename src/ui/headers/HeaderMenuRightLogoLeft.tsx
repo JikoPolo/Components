@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import reactLogo from "../../assets/react.svg";
-import Burger from "../icons/Burger";
-import Close from "../icons/Close";
+import Burger from "../elements/icons/Burger";
+import Close from "../elements/icons/Close";
 
 const HeaderMenuRightLogoLeft: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

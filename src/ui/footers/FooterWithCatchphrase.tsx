@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import reactLogo from "../../assets/react.svg";
-import Icon from "../icons/Icon";
+import Icon from "../elements/icons/Icon";
 
 const FooterWithCatchphrase = () => {
   return (
