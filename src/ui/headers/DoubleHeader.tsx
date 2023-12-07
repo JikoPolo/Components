@@ -22,21 +22,23 @@ const DoubleHeader: React.FC = () => {
   return (
     <header className="relative bg-base-200 w-full">
       {/* top nav */}
-      <nav>
-        <ul className="menu menu-horizontal w-full justify-end items-center gap-8 bg-base-300 px-4 sm:px-16">
-          <li className="hover:underline">
-            <Link to="/">homepage</Link>
-          </li>
-          <li className="hover:underline">
-            <Link to="/product">product</Link>
-          </li>
-          <li className="hover:underline">
-            <Link to="/product">
-              <Icon />
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="bg-base-300">
+        <nav className=" px-4 py-4 sm:px-16 lg:max-w-7xl lg:m-auto">
+          <ul className="menu menu-horizontal w-full justify-end items-center gap-8 ">
+            <li className="hover:underline">
+              <Link to="/">homepage</Link>
+            </li>
+            <li className="hover:underline">
+              <Link to="/product">product</Link>
+            </li>
+            <li className="hover:underline">
+              <Link to="/product">
+                <Icon />
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       {/* Divider if NEEDED // m-0 + h-px pour reset le style */}
       <div className="divider m-0 h-px "></div>
