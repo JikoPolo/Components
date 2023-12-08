@@ -4,6 +4,7 @@ import Templates from "./pages/Templates";
 import TemplatePage from "./templates/1/Template";
 import Headers from "./pages/Headers";
 import Footers from "./pages/Footers";
+import TestimonialsPage from "./pages/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="templates/:id" element={<TemplatePage />} />
         <Route path="headers" element={<Headers />} />
         <Route path="footers" element={<Footers />} />
+        <Route path="testimonials" element={<TestimonialsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
