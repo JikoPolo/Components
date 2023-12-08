@@ -5,9 +5,9 @@ const FooterWithColumns = () => {
     <footer className="py-8 bg-base-200">
       <div className="m-auto mt-10 px-4 sm:px-16 lg:flex-row lg:mt-0 lg:py-8 lg:w-full lg:max-w-7xl">
         {/* number of columns can change, just adapt width values on each */}
-        <div className="flex flex-wrap justify-center w-full m-auto flex-col lg:w-4/5 sm:flex-row">
+        <div className="flex flex-wrap justify-center w-full m-auto flex-col sm:flex-row">
           {/* first column */}
-          <div className="w-full px-4 sm:w-1/4">
+          <div className="w-full px-4 flex items-center flex-col sm:items-start sm:w-1/4">
             <h4 className=" font-semibold capitalize">Lets keep in touch !</h4>
             <h5 className="mt-6 mb-2">
               Find us on any of these platforms, we respond 1-2 business days.
@@ -41,7 +41,7 @@ const FooterWithColumns = () => {
           </div>
 
           {/* second column */}
-          <div className="w-full px-4 sm:w-1/4">
+          <div className="w-full px-4 flex items-center flex-col sm:items-start sm:w-1/4">
             <h4 className="font-semibold text-grey-200 capitalize">company</h4>
             <ul className="mt-6 lg:mb-0 mb-6">
               <li className="my-2 hover:underline">
@@ -60,7 +60,7 @@ const FooterWithColumns = () => {
           </div>
 
           {/* third column */}
-          <div className="w-full px-4 sm:w-1/4">
+          <div className="w-full px-4 flex items-center flex-col sm:items-start sm:w-1/4">
             <h4 className="font-semibold text-grey-200 capitalize">help</h4>
             <ul className="mt-6 lg:mb-0 mb-6">
               <li className="my-2 hover:underline">
@@ -79,7 +79,7 @@ const FooterWithColumns = () => {
           </div>
 
           {/* fourth column */}
-          <div className="w-full px-4 sm:w-1/4">
+          <div className="w-full px-4 flex items-center flex-col sm:items-start sm:w-1/4">
             <h4 className="font-semibold text-grey-200 capitalize">
               subscribe to newsletter
             </h4>

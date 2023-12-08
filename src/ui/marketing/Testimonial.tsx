@@ -3,7 +3,7 @@ import Card from "../elements/Card";
 const Testimonial = () => {
   return (
     // mb-24 is section common margin bottom
-    <section className="mb-24">
+    <section className="mb-6">
       <div className="text-center m-auto mt-10 px-4 sm:px-16 lg:mt-0 lg:py-8 lg:w-full lg:max-w-7xl">
         <h1 className="text-5xl font-bold mb-4">
           Our happy clients say about us
