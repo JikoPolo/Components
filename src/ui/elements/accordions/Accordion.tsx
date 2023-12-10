@@ -3,14 +3,15 @@ import React from "react";
 // to better maintain this accordion, maybe use these
 interface AccordionProps {
   //   children: React.ReactNode;
-  //   title: string;
+  title?: string;
   className?: string;
   style?: React.CSSProperties;
 }
 
-const Accordion = ({ ...rest }: AccordionProps) => {
+const Accordion = ({ title, ...rest }: AccordionProps) => {
   return (
     <div className="m-auto mt-10 px-4 sm:px-16 lg:mt-0 lg:py-8 lg:w-full lg:max-w-7xl">
+      <h2 className="text-5xl font-bold mb-4"> {title} </h2>
       <div className="join join-vertical w-full" {...rest}>
         {/* first */}
         <div className="collapse collapse-arrow join-item border border-base-300">
