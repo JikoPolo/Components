@@ -4,6 +4,7 @@ import { TemplateParamTypes } from "../ParamsTypes";
 // components
 import DoubleHeader from "../../ui/headers/DoubleHeader";
 // import HeroImgRightWave from "../../ui/heros/HeroImgRightWave";
+import Accordion from "../../ui/elements/accordions/Accordion";
 
 import HeroSliderRight from "../../ui/heros/HeroSliderRight";
 
@@ -21,6 +22,7 @@ const TemplatePage: React.FC = () => {
       <DoubleHeader />
       <HeroSliderRight />
       <HowDoesItWork />
+      <Accordion />
       <Testimonial />
       <WavesReverse />
       <FooterWithColumns />
