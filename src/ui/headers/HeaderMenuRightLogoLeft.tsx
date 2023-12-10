@@ -6,7 +6,13 @@ import reactLogo from "../../assets/react.svg";
 import Burger from "../elements/icons/Burger";
 import Close from "../elements/icons/Close";
 
-const HeaderMenuRightLogoLeft: React.FC = () => {
+interface HeaderMenuRightLogoLeftProps {
+  style?: React.CSSProperties;
+}
+
+const HeaderMenuRightLogoLeft: React.FC<HeaderMenuRightLogoLeftProps> = ({
+  ...rest
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuState = () => {
@@ -20,7 +26,7 @@ const HeaderMenuRightLogoLeft: React.FC = () => {
   };
 
   return (
-    <header className="relative px-16 bg-base-200 w-full">
+    <header className="relative px-16 bg-base-200 w-full" {...rest}>
       <nav
         className={`w-full flex justify-between bg-transparent p-4 ${
           isOpen ? "flex-col" : ""
