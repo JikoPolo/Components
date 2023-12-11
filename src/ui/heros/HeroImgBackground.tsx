@@ -10,7 +10,7 @@ const HeroImgBackground: React.FC<HeroImgBackgroundProps> = ({ ...rest }) => {
     <>
       {/* basic hero */}
       <div
-        className="relative flex justify-center bg-base-200 bg-hero-img bg-center bg-no-repeat min-h-screen bg-cover"
+        className="relative flex justify-center bg-base-200 bg-hero-img bg-center bg-no-repeat min-h-screen bg-cover bg-hero-gradient"
         {...rest}
       >
         <div className="flex justify-between mt-10 px-4 sm:px-16 lg:mt-0 lg:w-full lg:max-w-7xl xl:p-0">

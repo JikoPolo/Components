@@ -22,7 +22,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ ...rest }) => {
   }
   return (
     <motion.div
-      className="absolute w-8 h-8 bg-slate-50 transform -translate-x-1/2 -translate-y-1/2"
+      className="absolute z-50 w-8 h-8 bg-slate-50 transform -translate-x-1/2 -translate-y-1/2"
       variants={variants}
       animate="animate"
       {...rest}
