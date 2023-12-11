@@ -3,7 +3,7 @@ import ScrollIndicator from "../elements/ScrollIndicator";
 const Waves = () => {
   return (
     //  wave with base color, check getwaves.io
-    <div className="relative">
+    <div className="relative flex justify-center">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#191e24"
@@ -12,7 +12,7 @@ const Waves = () => {
         ></path>
       </svg>
       {/* element to indicate the scroll down the transform properties are there to center prefectly */}
-      <ScrollIndicator />
+      <ScrollIndicator style={{ top: "50%" }} />
     </div>
   );
 };

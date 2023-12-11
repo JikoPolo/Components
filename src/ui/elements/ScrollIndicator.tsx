@@ -17,9 +17,7 @@ const variants = {
 };
 
 const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ ...rest }) => {
-  {
-    /* element to indicate the scroll down the transform properties are there to center prefectly */
-  }
+  // Parent element need to have flex justify-center to center
   return (
     <motion.div
       className="absolute z-50 w-8 h-8 bg-slate-50 transform -translate-x-1/2 -translate-y-1/2"
