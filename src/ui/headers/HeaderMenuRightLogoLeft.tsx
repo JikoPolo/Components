@@ -26,14 +26,14 @@ const HeaderMenuRightLogoLeft: React.FC<HeaderMenuRightLogoLeftProps> = ({
   };
 
   return (
-    <header className="relative px-16 bg-base-200 w-full" {...rest}>
+    <header className="relative px-16 bg-base-200 w-full py-4 " {...rest}>
       <nav
-        className={`w-full flex justify-between bg-transparent p-4 ${
+        className={`w-full flex justify-between bg-transparent max-w-7xl lg:p-4 ${
           isOpen ? "flex-col" : ""
         }`}
       >
         {/* Logo */}
-        <div className="flex items-center mx-4">
+        <div className="flex items-center">
           <a href="#" title="logo" className="flex">
             <img src={reactLogo} alt="logo" />
             <span className="text-xl font-bold mx-3">react</span>

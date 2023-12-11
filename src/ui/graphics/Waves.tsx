@@ -1,17 +1,6 @@
-import { motion } from "framer-motion";
+import ScrollIndicator from "../elements/ScrollIndicator";
 
 const Waves = () => {
-  const variants = {
-    animate: {
-      y: ["0%", "60%", "0%"],
-      transition: {
-        duration: 2, // Duration of one cycle of the float
-        ease: "easeInOut",
-        repeat: Infinity, // Loop the animation infinitely
-      },
-    },
-  };
-
   return (
     //  wave with base color, check getwaves.io
     <div className="relative">
@@ -23,11 +12,7 @@ const Waves = () => {
         ></path>
       </svg>
       {/* element to indicate the scroll down the transform properties are there to center prefectly */}
-      <motion.div
-        className="absolute w-8 h-8 bg-slate-50 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        variants={variants}
-        animate="animate"
-      ></motion.div>
+      <ScrollIndicator />
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Templates = () => {
     <>
       <h1 className="text-4xl">Templates</h1>
       {templateIDs.map((id) => (
-        <NavLink key={id} to={`/templates/${id}`}>
+        <NavLink key={id} className="m-4" to={`/templates/${id}`}>
           View Template {id}
         </NavLink>
       ))}
