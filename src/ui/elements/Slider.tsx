@@ -20,19 +20,44 @@ const Slider = () => {
       modules={[Scrollbar]}
       className="mySwiper"
     >
-      <SwiperSlide className="w-96 h-60 flex self-center">
+      <SwiperSlide
+        style={{
+          display: "flex",
+          width: "24rem",
+          height: "15rem",
+          alignSelf: "center",
+        }}
+      >
         <Card />
       </SwiperSlide>
-      <SwiperSlide className="w-96 h-60 flex self-center">
+      <SwiperSlide
+        style={{
+          display: "flex",
+          width: "24rem",
+          height: "15rem",
+          alignSelf: "center",
+        }}
+      >
         <Card />
       </SwiperSlide>
-      <SwiperSlide className="w-96 h-60 flex self-center">
+      <SwiperSlide
+        style={{
+          display: "flex",
+          width: "24rem",
+          height: "15rem",
+          alignSelf: "center",
+        }}
+      >
         <Card />
       </SwiperSlide>
-      <SwiperSlide className="w-96 h-60 flex self-center">
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide className="w-96 h-60 flex self-center">
+      <SwiperSlide
+        style={{
+          display: "flex",
+          width: "24rem",
+          height: "15rem",
+          alignSelf: "center",
+        }}
+      >
         <Card />
       </SwiperSlide>
     </Swiper>
