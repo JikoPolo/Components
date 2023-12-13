@@ -19,6 +19,7 @@ const CardCarousel: React.FC<SliderProps> = ({ settings = {} }) => {
   return (
     <Swiper
       scrollbar={settings.scrollbar}
+      breakpoints={settings.breakpoints}
       centeredSlides={settings.centeredSlides}
       coverflowEffect={settings.coverflowEffect}
       effect={settings.effect}
@@ -31,25 +32,25 @@ const CardCarousel: React.FC<SliderProps> = ({ settings = {} }) => {
       className="cardCarousel w-full h-full"
     >
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
       <SwiperSlide className="text-center flex justify-center items-center">
-        <Card />
+        <Card width="100%" />
       </SwiperSlide>
     </Swiper>
   );

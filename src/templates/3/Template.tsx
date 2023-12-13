@@ -25,10 +25,16 @@ const TemplatePage: React.FC = () => {
 
   const settings = {
     spaceBetween: 20,
-    slidesPerView: "3",
+    slidesPerView: 2,
     centeredSlides: true,
     loop: true,
     navigation: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
   };
 
   return (
