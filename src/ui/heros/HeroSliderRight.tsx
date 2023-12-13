@@ -1,6 +1,6 @@
 // import heroImg from "../../assets/undraw_automobile_repair_ywci.svg";
 import Waves from "../graphics/Waves";
-import Slider from "../elements/Slider";
+import Slider from "../elements/carousels/CardCarousel";
 
 const HeroSliderRight = () => {
   return (

@@ -51,7 +51,8 @@ const HeaderMenuRightLogoLeft: React.FC<HeaderMenuRightLogoLeftProps> = ({
           <li className="hover:underline">
             <Link to="/product">product</Link>
           </li>
-          <li className="btn btn-primary">
+          {/* make this button color easily editable */}
+          <li className="btn btn-accent">
             <Link to="/login">login</Link>
           </li>
         </ul>

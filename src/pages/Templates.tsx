@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Templates = () => {
   // TODO: fetch template IDs from a folder or anything else
-  const templateIDs = ["1", "2"];
+  const templateIDs = ["1", "2", "3"];
 
   return (
     <>
