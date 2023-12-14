@@ -5,7 +5,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import HeaderMenuRightLogoLeft from "../../ui/headers/HeaderMenuRightLogoLeft";
 import HeroCentered from "../../ui/heros/HeroCentered";
 import Brands from "../../ui/marketing/brands/Brands";
-import HowDoesItWork from "../../ui/marketing/HowDoesItWork";
+import BasicSection from "../../ui/marketing/BasicSection";
 import CardCarousel from "../../ui/elements/carousels/CardCarousel";
 import BasicForm from "../../ui/elements/forms/BasicForm";
 import FooterWithCatchphrase from "../../ui/footers/FooterWithCatchphrase";
@@ -61,7 +61,7 @@ const TemplatePage: React.FC = () => {
         <Brands bg="bg-base-200" />{" "}
       </HeroCentered>
 
-      <HowDoesItWork title="How Does it Work ?">
+      <BasicSection title="How Does it Work ?">
         <ul className="flex flex-col w-96 gap-8 justify-center items-center sm:w-full sm:flex-row">
           <li className="flex flex-col justify-center items-center text-center gap-2">
             <Player
@@ -127,7 +127,7 @@ const TemplatePage: React.FC = () => {
             </p>
           </li>
         </ul>
-      </HowDoesItWork>
+      </BasicSection>
 
       <section className="flex flex-col justify-center m-auto my-10 p-4 bg-base-200 sm:px-16 lg:mt-0 lg:py-8 lg:w-full lg:max-w-7xl">
         <div className="text-center m-auto mt-10 px-4 sm:px-16 lg:mt-0 lg:py-8 lg:w-full lg:max-w-7xl">

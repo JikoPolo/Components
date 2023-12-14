@@ -8,7 +8,7 @@ import Accordion from "../../ui/elements/accordions/Accordion";
 
 import HeroSliderRight from "../../ui/heros/HeroSliderRight";
 
-import HowDoesItWork from "../../ui/marketing/HowDoesItWork";
+import BasicSection from "../../ui/marketing/BasicSection";
 import Testimonial from "../../ui/marketing/testimonials/Testimonial";
 import WavesReverse from "../../ui/graphics/WavesReverse";
 import FooterWithColumns from "../../ui/footers/FooterWithColumns";
@@ -21,7 +21,7 @@ const TemplatePage: React.FC = () => {
     <div>
       <DoubleHeader />
       <HeroSliderRight />
-      <HowDoesItWork />
+      <BasicSection />
       <Accordion />
       <Testimonial />
       <WavesReverse />

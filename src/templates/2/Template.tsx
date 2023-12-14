@@ -6,7 +6,7 @@ import { TemplateParamTypes } from "../ParamsTypes";
 // components
 import HeaderMenuRightLogoLeft from "../../ui/headers/HeaderMenuRightLogoLeft";
 import HeroImgBackground from "../../ui/heros/HeroImgBackground";
-import HowDoesItWork from "../../ui/marketing/HowDoesItWork";
+import BasicSection from "../../ui/marketing/BasicSection";
 import Testimonial from "../../ui/marketing/testimonials/Testimonial";
 import WavesReverse from "../../ui/graphics/WavesReverse";
 import FooterWithColumns from "../../ui/footers/FooterWithColumns";
@@ -43,7 +43,7 @@ const TemplatePage: React.FC = () => {
         }}
       />
       <HeroImgBackground />
-      <HowDoesItWork />
+      <BasicSection title="How does it Work ?" />
       <Testimonial />
       <WavesReverse />
       <FooterWithColumns />

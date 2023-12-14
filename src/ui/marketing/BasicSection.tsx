@@ -6,7 +6,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const HowDoesItWork: React.FC<Props> = ({
+const BasicSection: React.FC<Props> = ({
   title,
   description = "Lorem ipsum dolor sit, amet consectetur adipisicing elit with a longer",
   children,
@@ -25,4 +25,4 @@ const HowDoesItWork: React.FC<Props> = ({
   );
 };
 
-export default HowDoesItWork;
+export default BasicSection;

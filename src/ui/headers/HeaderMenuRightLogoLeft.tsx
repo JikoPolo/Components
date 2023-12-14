@@ -26,7 +26,10 @@ const HeaderMenuRightLogoLeft: React.FC<HeaderMenuRightLogoLeftProps> = ({
   };
 
   return (
-    <header className="relative px-16 bg-base-200 w-full py-4 " {...rest}>
+    <header
+      className="relative px-16 bg-base-200 w-full py-4 flex justify-center"
+      {...rest}
+    >
       <nav
         className={`w-full flex justify-between bg-transparent max-w-7xl lg:p-4 ${
           isOpen ? "flex-col" : ""
